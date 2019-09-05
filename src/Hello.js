@@ -6,7 +6,7 @@ class Hello extends Component {
 		return (   //return 多行需要用 ()  否則會error
 			<div className='f1 tc'>    
 				<h1>Hello World</h1>
-				<p>Welcome to React</p>
+				<p>Welcome + {this.props.greeting}</p>
 			</div>
 		)
 	}
