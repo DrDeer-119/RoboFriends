@@ -4,8 +4,10 @@ import Card from './Card';
 
 const CardArray = ( {robots} ) => {
 	
-		const CardArray = robots.map((user,i) => {
-
+		return (
+		<div>
+			{
+			robots.map((user,i) => {
 			return (
 				<Card 
 					key = {i}
@@ -13,11 +15,8 @@ const CardArray = ( {robots} ) => {
 					name={robots[i].name}	
 					email={robots[i].email}
 					/>)
-		})
-
-		return (
-		<div>
-			{CardArray}
+				})
+			}
 		</div>
 		);
 }
